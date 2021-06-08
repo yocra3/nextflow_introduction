@@ -1,1 +1,3 @@
-# nextflow_introduction
+# Introduction to nextflow
+
+Introduction to main concepts of nextflow, containers and nf-core, based on the content of [seqera labs](https://seqera.io/training/). Course developed in the context of Grupo de trabajo de Bioinformática de CIBERER. A presentation is available from [google drive](https://drive.google.com/file/d/1f8FgE8uqZGiSlG8-PbD7vTd7Ya3axms7/view?usp=sharing). All examples are based on Nextflow 21.04.
