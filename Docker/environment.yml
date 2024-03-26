@@ -1,8 +1,0 @@
-# You can use this file to create a conda environment for this pipeline:
-#   conda env create -f environment.yml
-name: nextflow_r
-channels:
-  - conda-forge
-
-dependencies:
-  - conda-forge::r-base=4.1.0
