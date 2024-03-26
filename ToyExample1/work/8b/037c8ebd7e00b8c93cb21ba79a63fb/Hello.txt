@@ -1,0 +1,1 @@
+/mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/work/25/8a16e3a5dcc78e721c019ebd8de87f/Hello.txt

@@ -9,10 +9,10 @@ file_names = Channel.fromList(params.file_names)
 process createFastq {
   
   input:
-    val x from file_names
+    val x 
   
   output:
-    file '*.fastq' into fastq
+    file '*.fastq' 
   
   script:
   """
@@ -23,10 +23,10 @@ process createFastq {
 process createBam {
   
   input:
-  file(fastq) from fastq
+  file(fastq) 
   
   output:
-  file('*.bam') into bam
+  file('*.bam') 
   
   script:
   """
@@ -38,14 +38,21 @@ process createBam {
 process createVCF {
   
   input:
-  file(bam) from bam
+  file(bam) 
   
   output:
-  file('*.vcf') into vcf
+  file('*.vcf') 
   
   script:
   """
   cat $bam > \$(basename bam .bam).vcf
   """
+
+}
+
+workflow{
+  fastq_ch = createFastq(file_names)
+  bam_ch = createBam(fastq_ch)
+  vcf_ch = createVCF(bam_ch)
 
 }

@@ -1,0 +1,12 @@
+2024-03-25 13:33:26	-	wise_lorenz	-	9b70066adf35b07e8cb115d166d45284	ce8ff838-2858-40c5-93ff-9f414a86736a	nextflow run main.nf
+2024-03-25 13:33:44	-	modest_cuvier	-	9b70066adf35b07e8cb115d166d45284	a3021b87-c87c-49e1-a904-3025bbebc93f	nextflow run main.nf
+2024-03-25 13:34:43	-	deadly_planck	-	9b70066adf35b07e8cb115d166d45284	e63915b4-2f80-434b-8188-54acbdd858f6	nextflow run main.nf
+2024-03-25 13:35:02	-	reverent_poitras	-	9b70066adf35b07e8cb115d166d45284	db989b9d-2eac-41e4-8c85-5ceab3fda920	nextflow run main.nf
+2024-03-25 13:35:24	-	desperate_marconi	-	9b70066adf35b07e8cb115d166d45284	3ab0bae3-d995-41d1-979c-f6a5ef8106fa	nextflow run main.nf
+2024-03-25 13:35:54	-	marvelous_lalande	-	9b70066adf35b07e8cb115d166d45284	e3289763-132c-4285-9ef2-5840365c18fe	nextflow run main.nf
+2024-03-25 13:36:24	3.2s	romantic_church	OK	9b70066adf35b07e8cb115d166d45284	813783f3-ee5b-4fe7-b367-54e5589f465c	nextflow run main.nf
+2024-03-25 13:48:17	2.4s	hungry_brazil	ERR	b97131b38d475f4c99c5fe5da8b38ff7	1a5ca2de-0f9d-43ef-99a3-75b5c242821d	nextflow run example2.nf
+2024-03-25 13:49:20	2.4s	loving_boltzmann	ERR	b97131b38d475f4c99c5fe5da8b38ff7	12e17b8c-a898-4340-bd7f-e7b0cc65ca24	nextflow run example2.nf
+2024-03-25 13:50:34	2.4s	hopeful_solvay	OK	b97131b38d475f4c99c5fe5da8b38ff7	f7eb6abb-968f-4adb-a8c1-d6e2ef5683eb	nextflow run example2.nf
+2024-03-25 13:50:59	2.4s	sad_payne	ERR	b97131b38d475f4c99c5fe5da8b38ff7	d914d9cd-f1af-4be4-9cde-f8d21421878d	nextflow run example2.nf
+2024-03-25 13:51:19	3.3s	infallible_swanson	OK	b97131b38d475f4c99c5fe5da8b38ff7	f3ef20fa-b694-4bca-8ab6-34d91290cb39	nextflow run example2.nf

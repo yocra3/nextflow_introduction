@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/bin/splitwords.py", line 5, in <module>
+    for i, word in enumerate(x.split()):
+                             ^^^^^^^
+AttributeError: 'list' object has no attribute 'split'

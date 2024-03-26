@@ -1,0 +1,136 @@
+Mar-25 13:35:53.569 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Mar-25 13:35:53.688 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Mar-25 13:35:53.709 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/cruiz/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Mar-25 13:35:53.724 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-25 13:35:53.728 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-25 13:35:53.737 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-25 13:35:53.757 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-25 13:35:53.855 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-25 13:35:53.884 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [marvelous_lalande] DSL2 - revision: 9b70066adf
+Mar-25 13:35:53.885 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-25 13:35:53.886 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-25 13:35:53.895 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/cruiz/.nextflow/secrets/store.json
+Mar-25 13:35:53.907 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@488b50ec] - activable => nextflow.secret.LocalSecretsProvider@488b50ec
+Mar-25 13:35:53.974 [main] DEBUG nextflow.Session - Session UUID: e3289763-132c-4285-9ef2-5840365c18fe
+Mar-25 13:35:53.975 [main] DEBUG nextflow.Session - Run name: marvelous_lalande
+Mar-25 13:35:53.978 [main] DEBUG nextflow.Session - Executor pool size: 20
+Mar-25 13:35:53.984 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-25 13:35:54.014 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (23:01 CEST)
+  System: Linux 5.10.16.3-microsoft-standard-WSL2
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21.0.2+13-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 16279@U2003021 [127.0.1.1]
+  CPUs: 20 - Mem: 24.8 GB (23.7 GB) - Swap: 7 GB (7 GB) - Virtual threads ON
+Mar-25 13:35:54.069 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/work [v9fs]
+Mar-25 13:35:54.069 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/bin
+Mar-25 13:35:54.078 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-25 13:35:54.090 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-25 13:35:54.121 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-25 13:35:54.129 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Mar-25 13:35:54.376 [main] DEBUG nextflow.Session - Session start
+Mar-25 13:35:54.955 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-25 13:35:55.086 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_a84fe5a35df0ad6b: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/main.nf
+Mar-25 13:35:55.103 [main] ERROR nextflow.cli.Launcher - Module compilation error
+- file : /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/./workflows/toyExample.nf
+- cause: Workflow malformed parameter definition @ line 9, column 3.
+     letters_ch = SPLITWORDS(greeting_ch)
+     ^
+
+Module compilation error
+- file : /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/./workflows/toyExample.nf
+- cause: Workflow malformed parameter definition @ line 10, column 3.
+     result = CONVERTTOUPPER(letters_ch.flatten())
+     ^
+
+Module compilation error
+- file : /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/./workflows/toyExample.nf
+- cause: Workflow malformed parameter definition @ line 11, column 3.
+     result.view{ it.trim() }
+     ^
+
+3 errors
+
+nextflow.exception.ScriptCompilationException: Module compilation error
+- file : /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/./workflows/toyExample.nf
+- cause: Workflow malformed parameter definition @ line 9, column 3.
+     letters_ch = SPLITWORDS(greeting_ch)
+     ^
+
+Module compilation error
+- file : /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/./workflows/toyExample.nf
+- cause: Workflow malformed parameter definition @ line 10, column 3.
+     result = CONVERTTOUPPER(letters_ch.flatten())
+     ^
+
+Module compilation error
+- file : /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/./workflows/toyExample.nf
+- cause: Workflow malformed parameter definition @ line 11, column 3.
+     result.view{ it.trim() }
+     ^
+
+3 errors
+
+	at nextflow.script.ScriptParser.parse0(ScriptParser.groovy:196)
+	at nextflow.script.ScriptParser.parse(ScriptParser.groovy:206)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:221)
+	at nextflow.script.IncludeDef.memoizedMethodPriv$loadModule0PathMapSession(IncludeDef.groovy:151)
+	at nextflow.script.IncludeDef.access$0(IncludeDef.groovy)
+	at nextflow.script.IncludeDef$__clinit__closure2.doCall(IncludeDef.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.Closure.call(Closure.java:427)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.lambda$call$0(Memoize.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:113)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.call(Memoize.java:136)
+	at nextflow.script.IncludeDef.loadModule0(IncludeDef.groovy)
+	at nextflow.script.IncludeDef.load0(IncludeDef.groovy:123)
+	at nextflow.script.IncludeDef$load0$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at Script_a84fe5a35df0ad6b.runScript(Script_a84fe5a35df0ad6b:7)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:144)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:192)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:236)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:242)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:137)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:372)
+	at nextflow.cli.Launcher.run(Launcher.groovy:500)
+	at nextflow.cli.Launcher.main(Launcher.groovy:672)
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+Script_a540405d79d22441: 9: Workflow malformed parameter definition @ line 9, column 3.
+     letters_ch = SPLITWORDS(greeting_ch)
+     ^
+
+Script_a540405d79d22441: 10: Workflow malformed parameter definition @ line 10, column 3.
+     result = CONVERTTOUPPER(letters_ch.flatten())
+     ^
+
+Script_a540405d79d22441: 11: Workflow malformed parameter definition @ line 11, column 3.
+     result.view{ it.trim() }
+     ^
+
+3 errors
+
+	at org.codehaus.groovy.control.ErrorCollector.failIfErrors(ErrorCollector.java:292)
+	at org.codehaus.groovy.control.CompilationUnit$IPrimaryClassNodeOperation.doPhaseOperation(CompilationUnit.java:985)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:672)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:636)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:389)
+	at groovy.lang.GroovyClassLoader.lambda$parseClass$3(GroovyClassLoader.java:332)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.compute(StampedCommonCache.java:163)
+	at org.codehaus.groovy.runtime.memoize.StampedCommonCache.getAndPut(StampedCommonCache.java:154)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:330)
+	at groovy.lang.GroovyShell.parseClass(GroovyShell.java:526)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:538)
+	at groovy.lang.GroovyShell.parse(GroovyShell.java:570)
+	at nextflow.script.ScriptParser.parse0(ScriptParser.groovy:175)
+	... 31 common frames omitted

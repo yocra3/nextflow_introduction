@@ -1,0 +1,63 @@
+Mar-25 13:50:33.893 [main] DEBUG nextflow.cli.Launcher - $> nextflow run example2.nf
+Mar-25 13:50:34.048 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.10.1
+Mar-25 13:50:34.066 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/cruiz/.nextflow/plugins; core-plugins: nf-amazon@2.1.4,nf-azure@1.3.3,nf-cloudcache@0.3.0,nf-codecommit@0.1.5,nf-console@1.0.6,nf-ga4gh@1.1.0,nf-google@1.8.3,nf-tower@1.6.3,nf-wave@1.0.1
+Mar-25 13:50:34.084 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-25 13:50:34.087 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-25 13:50:34.090 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Mar-25 13:50:34.118 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-25 13:50:34.193 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-25 13:50:34.218 [main] INFO  nextflow.cli.CmdRun - Launching `example2.nf` [hopeful_solvay] DSL2 - revision: b97131b38d
+Mar-25 13:50:34.220 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-25 13:50:34.221 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Mar-25 13:50:34.233 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/cruiz/.nextflow/secrets/store.json
+Mar-25 13:50:34.247 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1869f114] - activable => nextflow.secret.LocalSecretsProvider@1869f114
+Mar-25 13:50:34.321 [main] DEBUG nextflow.Session - Session UUID: f7eb6abb-968f-4adb-a8c1-d6e2ef5683eb
+Mar-25 13:50:34.322 [main] DEBUG nextflow.Session - Run name: hopeful_solvay
+Mar-25 13:50:34.326 [main] DEBUG nextflow.Session - Executor pool size: 20
+Mar-25 13:50:34.333 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-25 13:50:34.359 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.10.1 build 5891
+  Created: 12-01-2024 22:01 UTC (23:01 CEST)
+  System: Linux 5.10.16.3-microsoft-standard-WSL2
+  Runtime: Groovy 3.0.19 on OpenJDK 64-Bit Server VM 21.0.2+13-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 29583@U2003021 [127.0.1.1]
+  CPUs: 20 - Mem: 24.8 GB (23.8 GB) - Swap: 7 GB (7 GB) - Virtual threads ON
+Mar-25 13:50:34.406 [main] DEBUG nextflow.Session - Work-dir: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/work [v9fs]
+Mar-25 13:50:34.449 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-25 13:50:34.460 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Mar-25 13:50:34.492 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-25 13:50:34.501 [main] DEBUG nextflow.util.CustomPoolFactory - Creating virtual thread pool
+Mar-25 13:50:34.741 [main] DEBUG nextflow.Session - Session start
+Mar-25 13:50:35.252 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-25 13:50:35.645 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-25 13:50:35.646 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-25 13:50:35.652 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-25 13:50:35.660 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=20; memory=24.8 GB; capacity=20; pollInterval=100ms; dumpInterval=5m
+Mar-25 13:50:35.663 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-25 13:50:35.788 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-25 13:50:35.789 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-25 13:50:35.808 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: CONVERTTOUPPER, TOYEXAMPLEPY:SPLITWORDSPY, TOYEXAMPLEPY:CONVERTTOUPPER, SPLITWORDSPY
+Mar-25 13:50:35.809 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+Mar-25 13:50:35.809 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TOYEXAMPLEPY:SPLITWORDSPY
+Mar-25 13:50:35.811 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > TOYEXAMPLEPY:CONVERTTOUPPER
+Mar-25 13:50:35.812 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_fa841e870dfd2c12: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/./workflows/../modules/convertToUpper/main.nf
+  Script_ee1bd2af9862ddea: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/./workflows/toyExamplePy.nf
+  Script_1b40a49bd11b9d26: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/example2.nf
+  Script_9086b34521237951: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/./workflows/../modules/splitWordsPy/main.nf
+Mar-25 13:50:35.813 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-25 13:50:35.813 [main] DEBUG nextflow.Session - Session await
+Mar-25 13:50:36.001 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-25 13:50:36.004 [Task submitter] INFO  nextflow.Session - [25/8a16e3] Submitted process > TOYEXAMPLEPY:SPLITWORDSPY (1)
+Mar-25 13:50:36.126 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: TOYEXAMPLEPY:SPLITWORDSPY (1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/work/25/8a16e3a5dcc78e721c019ebd8de87f]
+Mar-25 13:50:36.238 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-25 13:50:36.239 [Task submitter] INFO  nextflow.Session - [8b/037c8e] Submitted process > TOYEXAMPLEPY:CONVERTTOUPPER (1)
+Mar-25 13:50:36.303 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: TOYEXAMPLEPY:CONVERTTOUPPER (1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/c/Users/cruizarenas/Repositories/nextflow_introduction/ToyExample1/work/8b/037c8ebd7e00b8c93cb21ba79a63fb]
+Mar-25 13:50:36.317 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-25 13:50:36.320 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-25 13:50:36.322 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-25 13:50:36.327 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=55ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Mar-25 13:50:36.425 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-25 13:50:36.463 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-25 13:50:36.464 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
